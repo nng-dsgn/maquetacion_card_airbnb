@@ -1,0 +1,188 @@
+/** Reset **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/** FIN RESETS **/
+
+body {
+    background-color: #eee;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Títulos */
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    display: block;
+    font-weight: 900;
+    unicode-bidi: isolate;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    display: block;
+    font-weight: 00;
+    unicode-bidi: isolate;
+    color: grey;
+}
+
+/* Contenedor principal de la card */
+.card__container {
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 1rem;
+}
+
+/* Contenedor del header (para la imagen y el chip) */
+.card__header-container {
+    position: relative; /* Necesario para posicionar el chip y el ícono */
+}
+
+
+/* Contenedor de la imagen */
+.card__img-container {
+    width: 100%; /* O un valor fijo si lo prefieres */
+    height: 0;
+    padding-top: 100%; /* Esto crea un contenedor cuadrado con relación de aspecto 1:1 */
+    position: relative; /* Necesario para la imagen dentro */
+    overflow: hidden; /* Para asegurarse de que nada salga del contenedor */
+}
+
+/* Imagen de la card */
+.card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen cubrirá el área sin deformarse */
+    border-radius: 12px;
+}
+
+/* Chip de "Favorito entre huéspedes" */
+.card__chip-favorite {
+    width: 215px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 10px;  /* Distancia desde el top del contenedor */
+    left: 10px; /* Distancia desde el lado izquierdo */
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 2; /* Asegura que el chip se muestre encima de la imagen */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    /* Propiedades para que aparezcan los puntos suspensivos */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
+    text-overflow: ellipsis; /* Muestra los puntos suspensivos cuando el texto se desborda */
+}
+
+/* Ícono de corazón (favorito) */
+i.fa-heart {
+    color: grey;  /* Color del corazón */
+    outline: #333;
+    font-size: 20px;  /* Tamaño del ícono */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2; /* Asegura que el ícono se muestre sobre la imagen */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover en el ícono de corazón */
+i.fa-heart:hover {
+    transform: scale(1.2); /* Agrandar el ícono cuando el mouse pasa sobre él */
+}
+
+
+
+
+
+
+/* Contenedor del título y rating */
+.card__title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 0.67em;
+    align-items: center;
+}
+
+/* Contenedor de la calificación */
+.card__ratting {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Controla la separación entre el ícono de la estrella y el precio */
+}
+
+/* Estilo para el ícono de estrella (calificación) */
+.fa-star {
+    color: black; /* Color dorado */
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* Estilo para la calificación */
+.card__ratting p {
+    display: inline;
+    color: #333;
+}
+
+.Price {
+    font-size: large;
+    font-weight: bold;
+    color: black; /* Color dorado para la calificación */
+}
+
+
+
+
+/* Pie de la card */
+.card__footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px; /* Espacio entre el precio y la palabra noche */
+    align-items: flex-end;
+}
+
+
+/* Estilo para el precio */
+.card__footer .Price {
+    font-size: 18px;
+    font-weight: 600;
+    color: black; /* Color negro para el precio */
+}
+
+/* Texto "por noche" */
+.card__footer p {
+    font-size: 14px;
+    color: black;
+}
+
+/* Transiciones suaves */
+.card__container:hover {
+    transform: translateY(-5px); /* Suave movimiento hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra al hacer hover */
+}
