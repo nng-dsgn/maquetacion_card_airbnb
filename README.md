@@ -15,4 +15,4 @@ El propósito de este proyecto es mejorar las habilidades de maquetación web y 
 
 ## 📸 Vista previa
 
-![Vista previa de la Card](imgs/house-airbnb.webp)
+![Vista previa de la Card](https: nngdsgn-cardairbnb//.netlify.app)
