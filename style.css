@@ -21,12 +21,11 @@ body {
 /* Títulos */
 h1 {
     color: rgb(0, 0, 0);
-    font-size: 2em;
+    font-size: 2rem;
     display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    margin-block-start: 0.67rem;
+    margin-block-end: 0.67rem;
     font-weight: bold;
-    unicode-bidi: isolate;
 }
 
 h2 {
@@ -34,7 +33,6 @@ h2 {
     font-size: 0.9rem;
     display: block;
     font-weight: 900;
-    unicode-bidi: isolate;
 }
 
 p {
@@ -42,14 +40,13 @@ p {
     font-size: 0.9rem;
     display: block;
     font-weight: 00;
-    unicode-bidi: isolate;
-    color: grey;
+    color: #808080;
 }
 
 /* Contenedor principal de la card */
 .card__container {
-    max-width: 320px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 20rem; /* 320px*/
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     background-color: #fff;
     padding: 1rem;
 }
@@ -77,22 +74,22 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover; /* La imagen cubrirá el área sin deformarse */
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
 
 /* Chip de "Favorito entre huéspedes" */
 .card__chip-favorite {
-    width: 215px;
-    padding: 4px 16px;
-    border-radius: 20px;
+    width: 13.438rem; /* 215px*/
+    padding: 0.25rem 1rem;
+    border-radius: 1.25rem;
     background-color: white;
     position: absolute;
-    top: 10px;  /* Distancia desde el top del contenedor */
-    left: 10px; /* Distancia desde el lado izquierdo */
-    font-size: 14px;
+    top: 0.625rem;  /* Distancia desde el top del contenedor */
+    left: 0.625rem; /* Distancia desde el lado izquierdo */
+    font-size: 0.875rem;
     font-weight: 600;
     z-index: 2; /* Asegura que el chip se muestre encima de la imagen */
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
     /* Propiedades para que aparezcan los puntos suspensivos */
     white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
     overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
@@ -103,10 +100,10 @@ p {
 i.fa-heart {
     color: grey;  /* Color del corazón */
     outline: #333;
-    font-size: 20px;  /* Tamaño del ícono */
+    font-size: 1.25rem;  /* Tamaño del ícono */
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
     z-index: 2; /* Asegura que el ícono se muestre sobre la imagen */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -126,7 +123,7 @@ i.fa-heart:hover {
 .card__title-container {
     display: flex;
     justify-content: space-between;
-    margin-block-start: 0.67em;
+    margin-block-start: 0.67rem;
     align-items: center;
 }
 
@@ -134,14 +131,14 @@ i.fa-heart:hover {
 .card__ratting {
     display: flex;
     align-items: center;
-    gap: 2px; /* Controla la separación entre el ícono de la estrella y el precio */
+    gap: 0.125rem; /* Controla la separación entre el ícono de la estrella y el precio */
 }
 
 /* Estilo para el ícono de estrella (calificación) */
 .fa-star {
     color: black; /* Color dorado */
-    font-size: 12px;
-    margin-right: 5px;
+    font-size: 0.75rem;
+    margin-right: 0.313rem;
 }
 
 /* Estilo para la calificación */
@@ -150,7 +147,7 @@ i.fa-heart:hover {
     color: #333;
 }
 
-.Price {
+.price {
     font-size: large;
     font-weight: bold;
     color: black; /* Color dorado para la calificación */
@@ -161,28 +158,28 @@ i.fa-heart:hover {
 
 /* Pie de la card */
 .card__footer {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
-    gap: 5px; /* Espacio entre el precio y la palabra noche */
+    gap: 0.313rem; /* Espacio entre el precio y la palabra noche */
     align-items: flex-end;
 }
 
 
 /* Estilo para el precio */
 .card__footer .Price {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: black; /* Color negro para el precio */
 }
 
 /* Texto "por noche" */
 .card__footer p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: black;
 }
 
 /* Transiciones suaves */
 .card__container:hover {
-    transform: translateY(-5px); /* Suave movimiento hacia arriba */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra al hacer hover */
+    transform: translateY(-0.313rem); /* Suave movimiento hacia arriba */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Aumentar sombra al hacer hover */
 }
