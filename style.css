@@ -20,7 +20,7 @@ body {
 
 /* Títulos */
 h1 {
-    color: rgb(0, 0, 0);
+    color:  #000000;
     font-size: 2rem;
     display: block;
     margin-block-start: 0.67rem;
@@ -29,24 +29,22 @@ h1 {
 }
 
 h2 {
-    color: rgb(0, 0, 0);
+    color:  #000000;
     font-size: 0.9rem;
     display: block;
     font-weight: 900;
 }
 
 p {
-    color: rgb(0, 0, 0);
     font-size: 0.9rem;
     display: block;
-    font-weight: 00;
-    color: #808080;
+    color: #616161;
 }
 
 /* Contenedor principal de la card */
 .card__container {
     max-width: 20rem; /* 320px*/
-    box-shadow: 0 0 0.625rem;
+    box-shadow: 0 0 0.625rem #c7c7c7;
     background-color: #fff;
     padding: 1rem;
 }
@@ -82,14 +80,14 @@ p {
     width: 13.438rem; /* 215px*/
     padding: 0.25rem 1rem;
     border-radius: 1.25rem;
-    background-color: white;
+    background-color: #fff;
     position: absolute;
     top: 0.625rem;  /* Distancia desde el top del contenedor */
     left: 0.625rem; /* Distancia desde el lado izquierdo */
     font-size: 0.875rem;
     font-weight: 600;
     z-index: 2; /* Asegura que el chip se muestre encima de la imagen */
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 0.5rem  #6b6b6b4d;
     /* Propiedades para que aparezcan los puntos suspensivos */
     white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
     overflow: hidden; /* Oculta cualquier texto que exceda el ancho del contenedor */
@@ -98,7 +96,7 @@ p {
 
 /* Ícono de corazón (favorito) */
 i.fa-heart {
-    color: grey;  /* Color del corazón */
+    color: #979797;  /* Color del corazón */
     outline: #333;
     font-size: 1.25rem;  /* Tamaño del ícono */
     position: absolute;
@@ -136,7 +134,7 @@ i.fa-heart:hover {
 
 /* Estilo para el ícono de estrella (calificación) */
 .fa-star {
-    color: black; /* Color dorado */
+    color: #000000; /* Color dorado */
     font-size: 0.75rem;
     margin-right: 0.313rem;
 }
@@ -150,7 +148,7 @@ i.fa-heart:hover {
 .price {
     font-size: large;
     font-weight: bold;
-    color: black; /* Color dorado para la calificación */
+    color: #000000; /* Color dorado para la calificación */
 }
 
 
@@ -169,17 +167,17 @@ i.fa-heart:hover {
 .card__footer .Price {
     font-size: 1.125rem;
     font-weight: 600;
-    color: black; /* Color negro para el precio */
+    color: #000000; /* Color negro para el precio */
 }
 
 /* Texto "por noche" */
 .card__footer p {
     font-size: 0.875rem;
-    color: black;
+    color: #000000;
 }
 
 /* Transiciones suaves */
 .card__container:hover {
     transform: translateY(-0.313rem); /* Suave movimiento hacia arriba */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Aumentar sombra al hacer hover */
+    box-shadow: 0 0.5rem 1rem #c7c7c7; /* Aumentar sombra al hacer hover */
 }
